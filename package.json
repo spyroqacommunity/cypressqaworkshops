@@ -1,0 +1,14 @@
+{
+  "name": "repo_cypress_qa_community_spyro",
+  "version": "1.0.0",
+  "description": "cypress community repo",
+  "main": "index.js",
+  "scripts": {
+    "test": "test command"
+  },
+  "author": "qa_community",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.6.1"
+  }
+}
