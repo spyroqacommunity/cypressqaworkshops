@@ -33,6 +33,7 @@ describe('Career section tests', function () {
         careerPage.checkIfAllOfficesNameAreVisible()
     })
 
+//  TIP: 'only' spowoduje uruchomienie jedynie oznaczonego tym tagiem ('only') testu 
     it.only('Should be able to open Krakow office details from career tab', () => {
         careerPage.clickOnSiteDetails('Krakow')
         cy.checkIfSelectedSiteFromCarrerTabIsVisible('Krakow, PL')
