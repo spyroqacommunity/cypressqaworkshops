@@ -34,7 +34,7 @@ describe('Career section tests', function () {
     })
 
 //  TIP: 'only' spowoduje uruchomienie jedynie oznaczonego tym tagiem ('only') testu 
-    it.only('Should be able to open Krakow office details from career tab', () => {
+    it('Should be able to open Krakow office details from career tab', () => {
         careerPage.clickOnSiteDetails('Krakow')
         cy.checkIfSelectedSiteFromCarrerTabIsVisible('Krakow, PL')
         careerKrakowOfficePage.checkIfAtLeastOneJobOfferIsAvailable()
@@ -51,7 +51,7 @@ describe('Career section tests', function () {
     // })
 
     // ZADANIE 3 - z poziomu strony 'Careers' sprawdz czy URLe social mediow w stopce strony prowadzą do stron nalezących do Spyro
-    // it('should check if social media urls link to Spyro's pages, () => {
+    // it('Should check if social media urls link to Spyro's pages, () => {
 
     // })
     //.
