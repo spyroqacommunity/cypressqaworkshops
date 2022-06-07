@@ -1,0 +1,13 @@
+[
+    {
+        "type":"banner",
+        "icon":"warning",
+        "text":"To jest zamockowany resopnse z API OLXa",
+        "bgColor":"#FFF6D9",
+        "textColor":"#002F34",
+        "cta":true,
+        "ctaLabel":"Przeprowadzaj testy z uyciem Cypressa",
+        "ctaUrl":"https://www.youtube.com/watch?v=baY3SaIhfl0"
+    }
+]
+      
