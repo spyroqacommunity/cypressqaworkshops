@@ -3,8 +3,7 @@
 import {careerPage} from "../pages/careerPage"
 import {careerKrakowOfficePage} from "../pages/carrerKrakowOfficePage"
 
-
-describe('Career section tests', function () {
+describe('Career section tests', () => {
 
     beforeEach(() => {
         cy.visit(Cypress.env("careerUrl"))
@@ -33,7 +32,7 @@ describe('Career section tests', function () {
         careerPage.checkIfAllOfficesNameAreVisible()
     })
 
-//  TIP: 'only' spowoduje uruchomienie jedynie oznaczonego tym tagiem ('only') testu 
+//  TIP: 'it.only' spowoduje uruchomienie jedynie oznaczonego tym tagiem ('only') testu/testów 
     it('Should be able to open Krakow office details from career tab', () => {
         careerPage.clickOnSiteDetails('Krakow')
         cy.checkIfSelectedSiteFromCarrerTabIsVisible('Krakow, PL')
@@ -41,19 +40,18 @@ describe('Career section tests', function () {
     })
 
     // ZADANIE 1 - z poziomu strony 'Careers' otwórz podstronę biura w Białymstoku i sprawdź czy się na niej znajdujesz (sprawdź URL)
-    // it('Should be able to open Bialystok office details and should see Bialystok URL ', () => {
+    // it('Should be able to open Bialystok office details and should see Bialystok in URL', () => {
 
     // })
 
     // ZADANIE 2 - z poziomu strony 'Careers' sprawdź czy mozliwe jest wyslanie zapytania z formularza kontaktowe bez uzupełniania pól oznaczonych jako obowiązkowe (symbolem *) 
-    // it('Should not be able to send contanct form message without filling out the mandatory fields, () => {
+    // it('Should not be able to send contanct form message without filling out the mandatory fields', () => {
 
     // })
 
     // ZADANIE 3 - z poziomu strony 'Careers' sprawdz czy URLe social mediow w stopce strony prowadzą do stron nalezących do Spyro
-    // it('Should check if social media urls link to Spyro's pages, () => {
+    // it(`Should check if social media urls link to Spyro's pages`, () => {
 
     // })
-    //.
-    //.
+ 
 })
