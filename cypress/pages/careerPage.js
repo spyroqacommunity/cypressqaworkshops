@@ -1,4 +1,4 @@
-export const careerPageCss = {
+const careerPageCss = {
     mainTextHeader: 'h1',
     mainSubtextHeader: 'p.hero__subtext',
     officeNameText: 'div.office_city',
@@ -25,6 +25,5 @@ export const careerPage = {
     clickOnSiteDetails: (text) => {
         cy.get(careerPageCss.officeNameText).contains(text).click({force:true})
     }
-
 
 }

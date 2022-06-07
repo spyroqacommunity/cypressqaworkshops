@@ -1,4 +1,4 @@
-export const careerPageKrakowOfficeCss = {
+const careerPageKrakowOfficeCss = {
     siteNameInHeader: '.container.container-xl',
     jobTile: 'div.offer'
 }
@@ -11,4 +11,5 @@ export const careerKrakowOfficePage = {
     checkIfAtLeastOneJobOfferIsAvailable: () => {
         cy.get(careerPageKrakowOfficeCss.jobTile).should('have.length.greaterThan', 0)
     }
+
 }
