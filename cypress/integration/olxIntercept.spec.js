@@ -94,4 +94,15 @@ describe('Tests main OLX page using intercept', () => {
         cy.get(olxLocators.bannerLink).should('have.text', olxBannerSample[0].ctaLabel)
         cy.get(olxLocators.bannerLink).should('have.attr', 'href', olxBannerSample[0].ctaUrl)
     })
+
+    //ZADADNIE 1: Na stronie głównej x-kom.pl wyszukaj dowolny produkt po tekście i sprawdź czy w requeście "searchPromotion" jest wyszukiwana fraza
+    // it('Should search for promotion items by search text', () => {
+
+    // })
+
+    //ZADANIE 2 Zmień nazwę i cenę pierwszego rekomendowanego produktu na stronie głównej x-kom.pl
+    // it('Should be able to change name and price of first recommended imtem', () => {
+
+    // })
+
 })
