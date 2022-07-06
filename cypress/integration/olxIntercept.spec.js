@@ -8,7 +8,7 @@ import * as olxBannerSample from "../fixtures/olxBannerSample.json"
 describe('Tests main OLX page using intercept', () => {
 
     it('Should be able to check search request', () => {
-        let searchText = "truskawki"
+        let searchText = "wiaderko"
         cy.intercept('GET', `**/offers/metadata/search/**`).as('SearchForItems')
         cy.visit('https://www.olx.pl/')
         cy.get(olxLocators.acceptCookies).click()
