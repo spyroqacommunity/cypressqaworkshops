@@ -102,6 +102,5 @@ describe('Tests main OLX page using intercept', () => {
 
     //ZADANIE 2 Zmień nazwę i cenę pierwszego rekomendowanego produktu na stronie głównej x-kom.pl
     // it('Should be able to change name and price of first recommended imtem', () => {
-
     // })
 })
