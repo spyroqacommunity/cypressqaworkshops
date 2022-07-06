@@ -15,7 +15,7 @@ describe('Tests main OLX page using intercept', () => {
         cy.get(olxLocators.searchInput).type(searchText)
         cy.get(olxLocators.searchButton).click()
         cy.wait('@SearchForItems').its('request.url').should('contain', searchText)
-        cy.url().should('contain', "test")
+        cy.url().should('contain', searchText)
     })
 
     it('Should be able to simulate 500 on few categories', () => {
