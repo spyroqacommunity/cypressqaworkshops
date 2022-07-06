@@ -104,5 +104,4 @@ describe('Tests main OLX page using intercept', () => {
     // it('Should be able to change name and price of first recommended imtem', () => {
 
     // })
-
 })
